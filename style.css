@@ -1,0 +1,124 @@
+:root{
+    --cell-color:rgb(58, 58, 58);
+}
+
+body{
+    color: var(--cell-color);
+    user-select: none;
+    font-family: sans-serif,Verdana, Geneva, Tahoma, sans;
+    background-image: linear-gradient(rgb(71, 0, 0),rgb(151, 0, 0),rgb(255, 78, 78));
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+#menu{
+    margin: auto;
+    background-color:  rgb(255, 227, 191);
+    width: 30em ;
+    height: 3em;
+    border-radius: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+}
+#menu div{  
+    font-size: 1.3em;
+    line-height: 2em;
+    text-align: center;
+    margin: auto;
+    width: 7em;
+    height: 2em;
+}
+
+#score{
+    font-weight: 400;
+}
+
+#board{
+    
+    background-color: rgb(255, 227, 191);
+    border-radius: 25px;
+    width: 30em;
+    height: 30em;
+    margin: auto;
+    margin-top: 0.5em;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    position: relative;
+    overflow: hidden;
+    border-radius: 25px;
+}
+.cell:hover{
+    background-color:antiquewhite
+}
+.cell{
+    cursor: pointer;
+    color: var(--cell-color);
+    font-size: 3em;
+    line-height: 3em;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+}
+
+.fence{
+    background-color:var(--cell-color);
+}
+.row-fence{
+    position: absolute;
+    width:100%;
+    height:1%;
+}
+.column-fence{
+    position: absolute; 
+    width: 1%;
+    height: 100%;
+}
+#first-row-fence{
+    top: 33%;
+}
+#second-row-fence{
+    top:66%;
+}
+#first-column-fence{
+   
+    left:  33%;
+}
+#second-column-fence{
+    left:66%;
+}
+
+
+#message-background{
+    position: absolute;
+    right:0em ;
+    top:0em;
+    width: 100%;
+    height: 100%;
+}
+
+#message-container{
+    position: relative;
+    background-color: rgba(245, 255, 203, 0.795);
+    height: 10em;
+    text-align: center;
+    width: 28em;
+    margin: auto;
+    margin-top:8em;
+    border-radius: 25px;
+}
+
+#message{
+    font-size: 1.25em;
+    font-weight:700;
+    padding-top:2em;
+    padding-bottom:0.5em;
+}
+
+.message-button{
+    cursor: pointer;
+    padding:1em 1.5em;
+
+    background-color: rgb(199, 218, 124); 
+    border-radius: 20px;
+}
